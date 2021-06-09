@@ -49,7 +49,7 @@ print('begin:',a)
 
 a = 0
 while a < 0.71:
-    model.fit(train_data, train_res, epochs=50, batch_size=32, verbose=0)
+    model.fit(train_data, train_res, epochs=30, batch_size=32, verbose=0)
     #print('train:',model.history.history['accuracy'][-1])
     a1 = model.evaluate(test_data, test_res, batch_size=32, verbose=0)[-1]
     #if a1 > 0.65:

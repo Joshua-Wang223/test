@@ -25,7 +25,7 @@ scaler.fit(train_data)
 train_data = pd.DataFrame(scaler.transform(train_data))
 test_data = pd.DataFrame(scaler.transform(test_data))
 
-# 模型声明
+# Model statement
 from tensorflow.keras.layers import LeakyReLU
 model = Sequential()
 model.add(Reshape((-1,1), input_shape=(6,)))
